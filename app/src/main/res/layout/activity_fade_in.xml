@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_centerInParent="true"
+        android:id="@+id/txtMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="this is a test for animation!"
+        android:textSize="22dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_fade_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="fade in"
+                android:layout_alignBottom="@+id/txtMessage"/>
+            <Button
+                android:id="@+id/btn_fade_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="fade out"
+                android:layout_alignBottom="@+id/txtMessage"/>
+            <Button
+                android:id="@+id/btn_blink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="blink"
+                android:layout_alignBottom="@+id/txtMessage"/>
+            <Button
+                android:id="@+id/btn_zoom_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="zoom in"
+                android:layout_alignBottom="@+id/txtMessage"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_bounce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bounce"
+                android:layout_alignBottom="@+id/txtMessage"/>
+            <Button
+                android:id="@+id/btn_slide_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="slide up"
+                android:layout_alignBottom="@+id/txtMessage"/>
+            <Button
+                android:id="@+id/btn_rotate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="rotate"
+                android:layout_alignBottom="@+id/txtMessage"/>
+            <Button
+                android:id="@+id/btn_sequential"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sequential"
+                android:layout_alignBottom="@+id/txtMessage"/>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_zoom_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="zoom out"
+            android:layout_alignBottom="@+id/txtMessage"/>
+        <Button
+            android:id="@+id/btn_together"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="together"
+            android:layout_alignBottom="@+id/txtMessage"/>
+        <Button
+            android:id="@+id/btn_move"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="move"
+            android:layout_alignBottom="@+id/txtMessage"/>
+    </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
